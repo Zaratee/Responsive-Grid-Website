@@ -1,25 +1,25 @@
 import React from 'react'
-import styles from "./styles.module.css";
+import "../../App.css"
 
 
 const Header = () => {
     return (
-        <div>
+        <nav className='main-nav'>
             <ul>
                 <li>
-                    <a>Home</a>
+                    <a href='#'>Home</a>
                 </li>
                 <li>
-                    <a>About</a>
+                    <a href='#'>About</a>
                 </li>
                 <li>
-                    <a>Services</a>
+                    <a href='#'>Services</a>
                 </li>
                 <li>
-                    <a>Contact</a>
+                    <a href='#'>Contact</a>
                 </li>
             </ul>
-        </div>
+        </nav>
     )
 }
 

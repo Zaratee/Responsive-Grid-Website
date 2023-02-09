@@ -1,4 +1,5 @@
 import React from 'react'
+import "../../App.css"
 
 const values = [
     {
@@ -32,7 +33,7 @@ const values = [
 ]
 const Portafolio = () => {
     return (
-        <div>
+        <section className='portafolio'>
             {
                 values.map((image) => {
                     return (
@@ -40,7 +41,7 @@ const Portafolio = () => {
                     )
                 })
             }
-        </div>
+        </section>
     )
 }
 

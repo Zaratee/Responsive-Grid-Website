@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChartPie, faGlobe, faCog, faUsers } from '@fortawesome/free-solid-svg-icons'
 
 import React from 'react'
-import styles from "./styles.module.css";
+import "../../App.css"
 
 const values = [
     {
@@ -28,12 +28,12 @@ const values = [
 ]
 const Boxes = () => {
     return (
-        <div>
+        <section className='boxes'>
             {
                 values.map((category) => {
                     return (
 
-                        <div className={styles.box}>
+                        <div className="box">
                             <FontAwesomeIcon size='4x' icon={category.icon} />
                             <h3>{category.title}</h3>
                             <p>{category.description}</p>
@@ -41,7 +41,7 @@ const Boxes = () => {
                     )
                 })
             }
-        </div>
+        </section>
     )
 }
 

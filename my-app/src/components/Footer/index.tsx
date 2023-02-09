@@ -1,10 +1,11 @@
 import React from 'react'
+import "../../App.css"
 
 const Footer = () => {
     return (
-        <div>
+        <footer>
             <p>Zaratee &copy; 2023</p>
-        </div>
+        </footer>
     )
 }
 
